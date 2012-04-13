@@ -29,20 +29,20 @@ The following API endpoints are implemented:
 
 + Person
   + lookup (by email, phone number, twitter username, or facebook username)
-- User
-- Contact List
-- Contact
-- Snapshot
-- Subscription
+- User (TODO)
+- Contact List (TODO)
+- Contact (TODO)
+- Snapshot (TODO)
+- Subscription (TODO)
 + Name
   + normalize
   + deduce
   + similarity
   + stats
   + parser
-- Icon
-- Provisioning
-- Batch Process
+- Icon (TODO)
+- Provisioning (TODO)
+- Batch Process (TODO)
 
 ## Contributing
 
