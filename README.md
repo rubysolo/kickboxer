@@ -27,7 +27,8 @@ configure Kickboxer to use it via:
 
 The following API endpoints are implemented:
 
-- Person
++ Person
+  + lookup (by email, phone number, twitter username, or facebook username)
 - User
 - Contact List
 - Contact
