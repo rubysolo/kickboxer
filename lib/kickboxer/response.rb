@@ -1,4 +1,16 @@
 module Kickboxer
+  # Public: Thin wrapper around hashes returned from API
+  # to allow chained method call access to data
+  #
+  # Example
+  #
+  #   response = Response.new('result' => {'age' => 37, 'location' => 'Denver'})
+  #   response.result.age
+  #   # => 37
+  #   response.result.respond_to?(:location)
+  #   # => true
+  #   response.result.keys
+  #   # => [:age, :location]
   class Response
     def initialize(data={}, &block)
       @data = normalize data
