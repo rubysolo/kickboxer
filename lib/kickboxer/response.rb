@@ -5,6 +5,10 @@ module Kickboxer
       @data.merge!(Collector.new.instance_eval(&block).data) if block_given?
     end
 
+    def keys
+      @data.keys
+    end
+
     def respond_to?(method_id)
       @data.has_key?(method_id.to_sym) || @data.has_key?(method_id.to_s) || super
     end
