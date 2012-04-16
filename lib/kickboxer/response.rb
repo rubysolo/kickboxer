@@ -2,7 +2,6 @@ module Kickboxer
   class Response
     def initialize(data={}, &block)
       @data = normalize data
-      @data.merge!(Collector.new.instance_eval(&block).data) if block_given?
     end
 
     def keys
@@ -37,16 +36,6 @@ module Kickboxer
         @data[key.to_s]
       else
         super
-      end
-    end
-
-    class Collector
-      attr_reader :data
-
-      def method_missing(key, value)
-        @data ||= {}
-        @data[key] = value
-        self
       end
     end
   end
