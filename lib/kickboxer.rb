@@ -1,5 +1,3 @@
-require "kickboxer/version"
-
-module Kickboxer
-  # Your code goes here...
-end
+require 'kickboxer/name'
+require 'kickboxer/person'
+require 'kickboxer/version'
